@@ -15,9 +15,9 @@ You can run the app with:
 Once it is running, you can access it in a browser at http://localhost:8080
 
 
-Learning Objectives
-check_circle
-Install the Kubernetes metrics API in the cluster.
+## Learning Objectives
+
+### Install the Kubernetes metrics API in the cluster.
 To accomplish this, do the following:
 Clone the Kubernetes metrics repo.
 git clone https://github.com/kubernetes-incubator/metrics-server.git
@@ -26,8 +26,8 @@ cd metrics-server/
 git checkout ed0663b3b4ddbfab5afea166dfd68c677930d22e
 kubectl create -f deploy/1.8+/
 Wait a few seconds for the metrics server pods to start. You can see their status with kubectl get pods -n kube-system.
-check_circle
-Configure a Horizontal Pod Autoscaler to autoscale the train schedule app.
+
+### Configure a Horizontal Pod Autoscaler to autoscale the train schedule app.
 Check the example-solution branch of the source code repo for an example of the code changes needed in the train-schedule-kube.yml file: https://github.com/linuxacademy/cicd-pipeline-train-schedule-autoscaling/blob/example-solution/train-schedule-kube.yml.
 To complete this task, you will need to do the following:
 Create a fork of the source code at https://github.com/linuxacademy/cicd-pipeline-train-schedule-autoscaling.
